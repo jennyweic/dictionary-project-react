@@ -8,14 +8,14 @@ export default function Dictionary() {
     setKeyword(event.target.value);
   }
 
-  function submit(event) {
+  function handleSubmit(event) {
     event.preventDefault();
     alert(`Searching for ${keyword}`);
   }
 
   return (
     <div className="Dictionary">
-      <form onSubmit={submit}>
+      <form onSubmit={handleSubmit}>
         <input type="search" autofocus={true} onChange={updateKeyword} />
         <input type="submit" value="Search" />
       </form>
