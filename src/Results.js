@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Results(props) {
-  if (props.results) {
+  if (props.results.definition) {
     return (
       <div className="Results text-capitalize">
         <h1>{props.results.antonyms}</h1>
