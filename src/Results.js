@@ -5,8 +5,12 @@ export default function Results(props) {
     return (
       <div className="Results text-capitalize">
         <h1>{props.results.antonyms}</h1>
-        <h2></h2>
-        Definition: {props.results.definition}
+        <h4>
+          <p>{props.results.partOfSpeech}</p>
+        </h4>
+        <h2>
+          <p>Definition: {props.results.definition}</p>
+        </h2>
       </div>
     );
   } else {
