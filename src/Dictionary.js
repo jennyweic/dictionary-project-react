@@ -4,9 +4,11 @@ import axios from "axios";
 
 export default function Dictionary() {
   let [keyword, setKeyword] = useState("");
+  let [results, setResults] = useState({});
 
   function handleResponse(response) {
-    console.log(response.data[0]);
+    console.log(response.data.meanings[0]);
+    setResults(response.data.meanings[0]);
   }
 
   function handleSubmit(event) {
@@ -26,6 +28,7 @@ export default function Dictionary() {
         <input type="search" autofocus={true} onChange={updateKeyword} />
         <input type="submit" value="Search" />
       </form>
+      <Results />
     </div>
   );
 }
