@@ -5,7 +5,11 @@ input {
 
 .Dictionary {
   text-align: center;
-  margin: 30px 0;
+  background: white;
+  padding: 30px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  margin: 20px 0;
 }
 
 .search-box {
@@ -25,4 +29,9 @@ input {
   background-color: lightblue;
   text-transform: uppercase;
   padding: 15px;
+}
+
+.dictionary-results-section {
+  text-align: left;
+  padding-top: 30px;
 }
