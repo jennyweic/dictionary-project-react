@@ -1,9 +1,12 @@
 .Results {
-  background-color: lightblue;
   text-align: left;
   background: white;
-  padding: 30px;
-  margin: 20px 0;
+  padding: 25px;
+  margin: 5px 0;
+}
+
+section .results-top {
+  padding: 15px;
 }
 
 section h1 {

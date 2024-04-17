@@ -9,10 +9,10 @@ export default function Results(props) {
       <div className="Results text-capitalize text-sm-left">
         <section className="results-top">
           <h1>{props.results.word} </h1>
-          <h4>
+          <h5>
             <p>{props.results.phonetic}</p>
             <p>{props.results?.meanings[0].partOfSpeech}</p>
-          </h4>
+          </h5>
         </section>
         <h3>
           <section className="results-details">
