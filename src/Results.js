@@ -14,6 +14,7 @@ export default function Results(props) {
         <h3>
           <p>Definition: {props.results.meanings[0].definition}</p>
           <p>Example: {props.results.meanings[0].example}</p>
+          <p>Synonyms: {props.results.meanings[0].synonyms[0]}</p>
         </h3>
       </div>
     );
